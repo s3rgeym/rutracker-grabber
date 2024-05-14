@@ -43,7 +43,7 @@ class NameSpace(argparse.Namespace):
 
 def parse_args(argv: Sequence[str] | None) -> tuple[argparse.ArgumentParser, NameSpace]:
     parser = argparse.ArgumentParser(
-        epilog='eg. %(prog)s "https://rutracker.org/forum/index.php?c=19"'
+        epilog='eg. %(prog)s -o links.txt "https://rutracker.org/forum/index.php?c=19"'
     )
     parser.add_argument("forum_url")
     parser.add_argument("--user-agent", default=DEFAULT_USER_AGENT)
